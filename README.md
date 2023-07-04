@@ -5,6 +5,7 @@
 # 构建说明
 
  * https://cli.vuejs.org/zh/guide/build-targets.html
+ * https://cli.vuejs.org/zh/config/#pages
 
 # 示例1: laoyan-ui
 
@@ -29,7 +30,7 @@
  * https://www.npmjs.com/package/cross-env
  * https://cli.vuejs.org/zh/guide/mode-and-env.html
 
-# 在编译组建时配置单文件，在编译项目时配置多文件
+# 在编译组件时配置单文件，在编译项目时配置多文件，否则跑不通
 ```
   configureWebpack: {
     plugins: process.env.VUE_APP_BUILD_TARGET !== 'lib' ? [] : [
